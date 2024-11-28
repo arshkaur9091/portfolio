@@ -12,6 +12,7 @@ import {
   AiOutlineUser,
   AiOutlineProject,
   AiOutlineDingtalk,
+  AiOutlineContacts,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -93,6 +94,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineDingtalk style={{ marginBottom: "2px" }} /> Talks
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 
